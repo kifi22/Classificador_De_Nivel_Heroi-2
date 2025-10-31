@@ -1,0 +1,131 @@
+let Vitorias = 0
+
+Niveis()
+
+function Niveis(){
+
+    ferro(Vitorias > 0 && Vitorias < 10)
+
+    function ferro(){
+    
+        if(Vitorias > 0 && Vitorias < 10)
+    {
+        let ferro = "Ferro"
+        switch (ferro){
+            case ferro:
+                console.log("O Heroi tem saldo de " + Vitorias + " e " + "está no nivel de " + ferro)
+                return(Vitorias)
+        }
+    }
+
+}
+
+
+    bronze(Vitorias > 10 && Vitorias < 21)
+
+    function bronze(){
+
+        if(Vitorias > 10 && Vitorias < 21)
+    {
+        let bronze = "Bronze"
+        switch (bronze){
+            case bronze:
+                console.log ("O Heroi tem saldo de " + Vitorias + " e " + "está no nivel de " + bronze)
+                return(Vitorias)
+        }
+    }
+
+}
+
+
+    prata(Vitorias > 20 && Vitorias < 51)
+
+    function prata(){
+
+        if(Vitorias > 20 && Vitorias < 51)
+    {
+        let prata = "Prata"
+        switch (prata){
+            case prata:
+                console.log ("O Heroi tem saldo de " + Vitorias + " e " + "está no nivel de " + prata)
+                return(Vitorias)
+        }
+    }
+
+}
+
+
+    ouro(Vitorias > 50 && Vitorias < 81)
+
+    function ouro(){
+
+        if(Vitorias > 50 && Vitorias < 81)
+    {
+        let ouro = "Ouro"
+        switch (ouro){
+            case ouro:
+                console.log ("O Heroi tem saldo de " + Vitorias + " e " + "está no nivel de " + ouro)
+                return(Vitorias)
+        }
+    }
+
+}
+
+
+    diamante(Vitorias > 80 && Vitorias < 91)
+
+    function diamante(){
+
+        if(Vitorias > 80 && Vitorias < 91)
+    {
+        let diamante = "Diamante"
+        switch (diamante){
+            case diamante:
+                console.log("O Heroi tem saldo de " + Vitorias + " e " + "está no nivel de " + diamante)
+                return(Vitorias)
+        }
+    }
+
+}
+
+
+    lendario(Vitorias > 90 && Vitorias < 101)
+
+    function lendario(){
+
+        if(Vitorias > 90 && Vitorias < 101)
+    {
+        let lendario = "Lendário"
+        switch (lendario){
+            case lendario:
+                console.log ("O Heroi tem saldo de " + Vitorias + " e " + "está no nivel de " + lendario)
+                return(Vitorias)
+        }
+    }
+
+}
+
+
+    imortal(Vitorias >= 101)
+
+    function imortal(){
+
+        if(Vitorias >= 100)
+    {
+        let imortal = "Imortal"
+        switch (imortal){
+            case imortal:
+                console.log ("O Heroi tem saldo de " + Vitorias + " e " + "está no nivel de " + imortal)
+                return(Vitorias)
+        }
+    }
+}
+
+
+
+    while (Vitorias === 0){
+        console.log("Jogador iniciante detectado !")
+        break
+    }
+
+}
