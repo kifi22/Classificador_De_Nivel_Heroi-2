@@ -1,131 +1,113 @@
-let Vitorias = 0
-
 Niveis()
 
 function Niveis(){
+    var Vitorias = 15
+    var Derrotas = 10
 
-    ferro(Vitorias > 0 && Vitorias < 10)
+    function calculo_rankeadas(){
+        return Vitorias - Derrotas
+    }
+
+    if (calculo_rankeadas() > 0 && calculo_rankeadas() < 10){
+    ferro()
+    }
 
     function ferro(){
-    
-        if(Vitorias > 0 && Vitorias < 10)
-    {
-        let ferro = "Ferro"
-        switch (ferro){
-            case ferro:
-                console.log("O Heroi tem saldo de " + Vitorias + " e " + "está no nivel de " + ferro)
+
+        let Ferro = "Ferro"
+        switch (Ferro){
+            case Ferro:
+                console.log("O Heroi tem saldo de " + Vitorias + " está no nivel de " + Ferro)
                 return(Vitorias)
         }
     }
 
-}
 
-
-    bronze(Vitorias > 10 && Vitorias < 21)
+    if (calculo_rankeadas() > 10 && calculo_rankeadas() < 21){
+    bronze()
+    }
 
     function bronze(){
-
-        if(Vitorias > 10 && Vitorias < 21)
-    {
-        let bronze = "Bronze"
-        switch (bronze){
-            case bronze:
-                console.log ("O Heroi tem saldo de " + Vitorias + " e " + "está no nivel de " + bronze)
+        let Bronze = "Bronze"
+        switch (Bronze){
+            case Bronze:
+                console.log ("O Heroi tem saldo de " + Vitorias + " está no nivel de " + Bronze)
                 return(Vitorias)
         }
     }
 
-}
 
+    if (calculo_rankeadas() > 20 && calculo_rankeadas() < 51){ 
+    prata()
+    }
 
-    prata(Vitorias > 20 && Vitorias < 51)
 
     function prata(){
-
-        if(Vitorias > 20 && Vitorias < 51)
-    {
-        let prata = "Prata"
-        switch (prata){
-            case prata:
-                console.log ("O Heroi tem saldo de " + Vitorias + " e " + "está no nivel de " + prata)
+        let Prata = "Prata"
+        switch (Prata){
+            case Prata:
+                console.log ("O Heroi tem saldo de " + Vitorias + " está no nivel de " + Prata)
                 return(Vitorias)
         }
     }
 
-}
-
-
-    ouro(Vitorias > 50 && Vitorias < 81)
+    
+    if (calculo_rankeadas() > 50 && calculo_rankeadas() < 81){
+    ouro()
+    }
 
     function ouro(){
-
-        if(Vitorias > 50 && Vitorias < 81)
-    {
-        let ouro = "Ouro"
-        switch (ouro){
-            case ouro:
-                console.log ("O Heroi tem saldo de " + Vitorias + " e " + "está no nivel de " + ouro)
+        let Ouro = "Ouro"
+        switch (Ouro){
+            case Ouro:
+                console.log ("O Heroi tem saldo de " + Saldo_Vitorias + " está no nivel de " + Ouro)
                 return(Vitorias)
         }
     }
 
-}
 
-
-    diamante(Vitorias > 80 && Vitorias < 91)
+    if(calculo_rankeadas() > 80 && calculo_rankeadas() < 91){
+    diamante()
+    }
 
     function diamante(){
-
-        if(Vitorias > 80 && Vitorias < 91)
-    {
-        let diamante = "Diamante"
-        switch (diamante){
-            case diamante:
-                console.log("O Heroi tem saldo de " + Vitorias + " e " + "está no nivel de " + diamante)
+        let Diamante = "Diamante"
+        switch (Diamante){
+            case Diamante:
+                console.log("O Heroi tem saldo de " + Saldo_Vitorias + " está no nivel de " + Diamante)
                 return(Vitorias)
         }
     }
 
-}
 
-
-    lendario(Vitorias > 90 && Vitorias < 101)
+    if(calculo_rankeadas() > 90 && calculo_rankeadas() < 101)
+    lendario()
 
     function lendario(){
-
-        if(Vitorias > 90 && Vitorias < 101)
-    {
         let lendario = "Lendário"
         switch (lendario){
             case lendario:
-                console.log ("O Heroi tem saldo de " + Vitorias + " e " + "está no nivel de " + lendario)
+                console.log ("O Heroi tem saldo de " + Saldo_Vitorias + " está no nivel de " + lendario)
                 return(Vitorias)
         }
     }
 
-}
 
-
-    imortal(Vitorias >= 101)
+    if(calculo_rankeadas() >= 101)
+    imortal()
 
     function imortal(){
-
-        if(Vitorias >= 100)
-    {
-        let imortal = "Imortal"
+        let imortal = "imortal"
         switch (imortal){
             case imortal:
-                console.log ("O Heroi tem saldo de " + Vitorias + " e " + "está no nivel de " + imortal)
+                console.log ("O Heroi tem saldo de " + Saldo_Vitorias + " está no nivel de " + imortal)
                 return(Vitorias)
         }
     }
-}
 
 
-
-    while (Vitorias === 0){
+    while (calculo_rankeadas() === 0){
         console.log("Jogador iniciante detectado !")
         break
     }
-
 }
